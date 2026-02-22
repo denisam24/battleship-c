@@ -1,0 +1,11 @@
+# build
+battleship
+*.o
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store

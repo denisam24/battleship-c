@@ -9,3 +9,5 @@ battleship
 
 # OS
 .DS_Store
+battleship
+*.o

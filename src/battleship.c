@@ -185,7 +185,6 @@ static bool read_ship(Ship *s) {
 
     if (scanf(" %c", &s->orientation) != 1) return false;
 
-    // normalize orientation if someone uses lowercase
     if (s->orientation == 'h') s->orientation = 'H';
     if (s->orientation == 'v') s->orientation = 'V';
 
@@ -206,7 +205,6 @@ bool game_read_setup(Game *g) {
             fprintf(stderr,
                     "Invalid ship placement for player 1: %s (%c)\n",
                     s.name ? s.name : "(null)", s.id);
-            // still store name so we can free it correctly
             g->p1.ships[i] = s;
             return false;
         }

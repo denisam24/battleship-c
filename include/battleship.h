@@ -49,7 +49,6 @@ void game_play(Game *g);
 void game_print_boards(const Game *g);
 void game_destroy(Game *g);
 
-// helpers exposed for testing
 int game_total_ships(int rows, int cols);
 bool place_ship(Player *p, const Ship *s, int rows, int cols);
 bool ship_is_sunk(const Player *enemy, int rows, int cols, char ship_id);
